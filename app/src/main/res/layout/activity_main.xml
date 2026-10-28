@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="#121212"
+    android:gravity="center">
+
+    <com.example.sudoku3_0.SudokuBoardView
+        android:id="@+id/sudokuBoard"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="16dp" />
+    <!-- První řádek tlačítek 1 až 5 -->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_marginTop="16dp">
+
+        <Button android:id="@+id/btn1" android:text="1" android:layout_width="0dp" android:layout_height="wrap_content" android:layout_weight="1" />
+        <Button android:id="@+id/btn2" android:text="2" android:layout_width="0dp" android:layout_height="wrap_content" android:layout_weight="1" />
+        <Button android:id="@+id/btn3" android:text="3" android:layout_width="0dp" android:layout_height="wrap_content" android:layout_weight="1" />
+        <Button android:id="@+id/btn4" android:text="4" android:layout_width="0dp" android:layout_height="wrap_content" android:layout_weight="1" />
+        <Button android:id="@+id/btn5" android:text="5" android:layout_width="0dp" android:layout_height="wrap_content" android:layout_weight="1" />
+    </LinearLayout>
+
+    <!-- Druhý řádek tlačítek 6 až 9 -->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <Button android:id="@+id/btn6" android:text="6" android:layout_width="0dp" android:layout_height="wrap_content" android:layout_weight="1" />
+        <Button android:id="@+id/btn7" android:text="7" android:layout_width="0dp" android:layout_height="wrap_content" android:layout_weight="1" />
+        <Button android:id="@+id/btn8" android:text="8" android:layout_width="0dp" android:layout_height="wrap_content" android:layout_weight="1" />
+        <Button android:id="@+id/btn9" android:text="9" android:layout_width="0dp" android:layout_height="wrap_content" android:layout_weight="1" />
+        <Button
+            android:id="@+id/btnDelete"
+            android:text="K"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_marginTop="0dp"
+            android:backgroundTint="#B71C1C"
+            android:textColor="#FFFFFF" />
+    </LinearLayout>
+
+</LinearLayout>
